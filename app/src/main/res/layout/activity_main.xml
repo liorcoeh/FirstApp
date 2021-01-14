@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/firstFloorButton"
+        android:layout_width="147dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="132dp"
+        android:background="#00FFFFFF"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/first_floor" />
+
+    <ImageButton
+        android:id="@+id/secondFloorButton"
+        android:layout_width="150dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="60dp"
+        android:background="#00FFFFFF"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstFloorButton"
+        app:srcCompat="@drawable/second_floor" />
+
+    <ImageButton
+        android:id="@+id/thirdFloorButton"
+        android:layout_width="150dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="60dp"
+        android:background="#00FFFFFF"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondFloorButton"
+        app:srcCompat="@drawable/third_floor" />
+
+    <TextView
+        android:id="@+id/firstFloorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Floor"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/firstFloorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstFloorButton" />
+
+    <TextView
+        android:id="@+id/secondFloorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Floor"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/secondFloorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondFloorButton" />
+
+    <TextView
+        android:id="@+id/thirdFloorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Floor"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdFloorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/thirdFloorButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
