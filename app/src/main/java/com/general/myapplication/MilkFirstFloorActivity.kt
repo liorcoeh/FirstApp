@@ -1,30 +1,34 @@
 package com.general.myapplication
 
+import android.os.Bundle
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_milk_first_floor.*
 
 class MilkFirstFloorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_milk_first_floor)
-
-        var threePrecentExists: TextView = 0
-
-        val approveButton = findViewById<ImageButton>(R.id.approveButton)
         approveButton.setOnClickListener {
-            threePrecentExists.text = findViewById(R.id.editTextThreePrecentExists).text.toString()
+            print(editTextThreePrecentExists.text.toString())
+            print(editTextThreePrecentAdd.text.toString())
         }
-
-
-        val homeButton = findViewById<ImageButton>(R.id.homeButton)
         homeButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+//        var threePrecentExists: TextView = 0
+//
+//        val approveButton = findViewById<ImageButton>(R.id.approveButton)
+//        approveButton.setOnClickListener {
+//            print("")
+////            threePrecentExists.text = findViewById(R.id.editTextThreePrecentExists).text.toString()
+//        }
+//        val homeButton = findViewById<ImageButton>(R.id.homeButton)
+//        homeButton.setOnClickListener {
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 }
 
